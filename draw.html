@@ -80,7 +80,6 @@
 
     gumka.onclick = function() {
         curColor = colorWhite;
-        curSize = 15;
     }
 
     canvas = document.getElementById('draw');
@@ -113,14 +112,12 @@
         clickY.push(y);
         clickDrag.push(dragging);
         clickColor.push(curColor);
-        //nowo�� zapami�tanie rozmiaru
         clickSize.push(curSize);
     }
 
     function redraw(){
         context.clearRect(0, 0, context.canvas.width, context.canvas.height);
         context.lineJoin = "round";
-        // usunieto context.lineWidth = 5;
 
         for(let i=0; i < clickX.length; i++)
         {
@@ -137,11 +134,6 @@
             context.stroke();
         }
     }
-
-    function reset() {
-        context.clearRect(0, 0, 500, 500);
-    }
-
 </script>
 
 </body>
