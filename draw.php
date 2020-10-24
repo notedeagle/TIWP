@@ -19,23 +19,23 @@
 <button id="czysc">wyczysc plotno</button>
 
 <script type="text/javascript">
-    var clickX = [];
-    var clickY = [];
-    var clickDrag = [];
-    var paint = false;
-    var context = null;
-    var canvas;
+    let clickX = [];
+    let clickY = [];
+    let clickDrag = [];
+    let paint = false;
+    let context = null;
+    let canvas;
 
     const colorPurple = "#cb3594";
     const colorGreen = "#659b41";
     const colorYellow = "#ffcf33";
     const colorBrown = "#986928";
     const colorWhite = "white";
-    var curColor = colorPurple;
-    var clickColor = [];
+    let curColor = colorPurple;
+    let clickColor = [];
     //nowo�� tablica rozmiar�w
-    var clickSize = [];
-    var curSize = 5;
+    let clickSize = [];
+    let curSize = 5;
 
     male.onclick = function() {
         curSize = 3;
@@ -103,6 +103,10 @@
         paint = false;
     }
 
+    canvas.onmouseenter = function(){
+        paint = false;
+    }
+
     function addClick(x, y, dragging)
     {
         clickX.push(x);
@@ -114,11 +118,11 @@
     }
 
     function redraw(){
-        context.clearRect(0, 0, 500, 500);
+        context.clearRect(0, 0, context.canvas.width, context.canvas.height);
         context.lineJoin = "round";
         // usunieto context.lineWidth = 5;
 
-        for(var i=0; i < clickX.length; i++)
+        for(let i=0; i < clickX.length; i++)
         {
             context.beginPath();
             if(clickDrag[i]){
@@ -126,11 +130,10 @@
             }else{
                 context.moveTo(clickX[i], clickY[i]);
             }
+            context.strokeStyle = clickColor[i];
+            context.lineWidth = clickSize[i];
             context.lineTo(clickX[i], clickY[i]);
             context.closePath();
-            context.strokeStyle = clickColor[i];
-            //ustaw grubo�� linii
-            context.lineWidth = clickSize[i];
             context.stroke();
         }
     }
