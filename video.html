@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video example</title>
+</head>
+<body>
+    <button onclick="big()">Duzy</button>
+    <button onclick="normal()">Normalny</button>
+    <button onclick="small()">Maly</button>
+
+    <video id="video" width="500" autoplay controls>
+        <source src="http://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_stereo.ogg" type="video/ogg">
+        Twoja przegladarka nie wspiera
+    </video>
+
+
+    <script>
+        var myVideo = document.getElementById("video");
+
+        function big() {
+            myVideo.width = 1000;
+        }
+
+        function small() {
+            myVideo.width = 200;
+        }
+
+        function normal() {
+            myVideo.width = 500;
+        }
+    </script>
+</body>
+</html>
