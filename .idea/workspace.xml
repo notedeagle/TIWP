@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/video.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +42,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1jJlY7daOTrLN0Nvrb8uZNOJf5J" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -66,6 +66,7 @@
       <workItem from="1603546787278" duration="4994000" />
       <workItem from="1603555394859" duration="633000" />
       <workItem from="1603967075692" duration="1417000" />
+      <workItem from="1604844605770" duration="272000" />
     </task>
     <task id="LOCAL-00001" summary="add onmouseenter event">
       <created>1603549429328</created>
