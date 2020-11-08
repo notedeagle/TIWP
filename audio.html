@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio example</title>
+</head>
+<body>
+    <audio id="player" controls></audio>
+</body>
+</html>
+
+<script>
+    const audioSources = ["bensound-anewbeginning.mp3", "bensound-creativeminds.mp3",
+        "bensound-jazzyfrenchy.mp3", "bensound-littleidea.mp3", "bensound-ukulele.mp3"];
+    var music = document.getElementById("player");
+    function playAudio() {
+        let audioSource = audioSources[Math.floor(Math.random() * audioSources.length)];
+        music.src = audioSource;
+        music.loop = true;
+        music.oncanplay = function() {
+            music.currentTime = Math.floor(Math.random() * music.duration);
+        }
+        music.play();
+    }
+
+    music.addEventListener("canplaythrough", function() {
+        setInterval(function() {
+            if (!music.paused) {
+                music.pause();
+                playAudio();
+            }
+        }, 30000);
+    }, false);
+
+    playAudio();
+</script>
+
