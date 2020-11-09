@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="delete video, add audio.html, random music at random time for 30 seconds" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1jJlY7daOTrLN0Nvrb8uZNOJf5J" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="" />
+      <created>1603530119782</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603530119782</updated>
+      <workItem from="1603530121220" duration="2018000" />
+      <workItem from="1603546787278" duration="4994000" />
+      <workItem from="1603555394859" duration="633000" />
+      <workItem from="1603967075692" duration="1417000" />
+      <workItem from="1604844605770" duration="713000" />
+      <workItem from="1604867826357" duration="6454000" />
+    </task>
+    <task id="LOCAL-00001" summary="add onmouseenter event">
+      <created>1603549429328</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603549429328</updated>
+    </task>
+    <task id="LOCAL-00002" summary="php --&gt; html">
+      <created>1603550310185</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603550310185</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add .gitignore">
+      <created>1604845176589</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604845176589</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add .gitignore">
+      <created>1604845329578</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604845329578</updated>
+    </task>
+    <task id="LOCAL-00005" summary="delete video, add audio.html, random music at random time for 30 seconds">
+      <created>1604875659133</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604875659133</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add onmouseenter event" />
+    <MESSAGE value="php --&gt; html" />
+    <MESSAGE value="add .gitignore" />
+    <MESSAGE value="delete video, add audio.html, random music at random time for 30 seconds" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete video, add audio.html, random music at random time for 30 seconds" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="412" y="100" key="#PHP" timestamp="1603537179333">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="412" y="100" key="#PHP/0.0.1440.900@0.0.1440.900" timestamp="1603537179333" />
+    <state x="400" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604869431305">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="400" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1604869431305" />
+    <state x="543" y="380" key="NewPhpFileDialog" timestamp="1603537227358">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="543" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1603537227358" />
+    <state x="97" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604875678890">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="97" y="252" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604875678890" />
+    <state x="150" y="340" key="Vcs.Push.Dialog.v2/0.0.2234.1216@0.0.2234.1216" timestamp="1603550319168" />
+    <state x="936" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603967083755">
+      <screen x="0" y="0" width="2234" height="1216" />
+    </state>
+    <state x="936" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2234.1216@0.0.2234.1216" timestamp="1603967083755" />
+  </component>
+</project>
