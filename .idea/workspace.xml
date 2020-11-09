@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="delete video, add audio.html, random music at random time for 30 seconds" />
+    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="delete video, add audio.html, random music at random time for 30 seconds">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio.html" beforeDir="false" afterPath="$PROJECT_DIR$/audio.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,6 +72,11 @@
       <workItem from="1603967075692" duration="1417000" />
       <workItem from="1604844605770" duration="713000" />
       <workItem from="1604867826357" duration="6454000" />
+      <workItem from="1604909267293" duration="20000" />
+      <workItem from="1604909363810" duration="35000" />
+      <workItem from="1604919257733" duration="880000" />
+      <workItem from="1604922086577" duration="1636000" />
+      <workItem from="1604924802080" duration="823000" />
     </task>
     <task id="LOCAL-00001" summary="add onmouseenter event">
       <created>1603549429328</created>
@@ -136,6 +144,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="412" y="100" key="#PHP/0.0.1440.900@0.0.1440.900" timestamp="1603537179333" />
+    <state x="571" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604919517648">
+      <screen x="0" y="0" width="2234" height="1216" />
+    </state>
+    <state x="571" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2234.1216@0.0.2234.1216" timestamp="1604919517648" />
     <state x="400" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604869431305">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

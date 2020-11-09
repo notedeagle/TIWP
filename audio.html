@@ -5,22 +5,28 @@
     <title>Audio example</title>
 </head>
 <body>
-    <audio id="player" controls></audio>
+    <audio id="player" controls>
+    </audio>
 </body>
 </html>
 
-<script>
+<script type="text/javascript">
     const audioSources = ["bensound-anewbeginning.mp3", "bensound-creativeminds.mp3",
         "bensound-jazzyfrenchy.mp3", "bensound-littleidea.mp3", "bensound-ukulele.mp3"];
-    var music = document.getElementById("player");
+    let music = document.getElementById("player");
     function playAudio() {
-        let audioSource = audioSources[Math.floor(Math.random() * audioSources.length)];
-        music.src = audioSource;
+        music.src = audioSources[Math.floor(Math.random() * audioSources.length)];
         music.loop = true;
+        let initialPlay = false;
+
+        music.play();
         music.oncanplay = function() {
+            if(initialPlay) {
+                return;
+            }
+            initialPlay = true;
             music.currentTime = Math.floor(Math.random() * music.duration);
         }
-        music.play();
     }
 
     music.addEventListener("canplaythrough", function() {
