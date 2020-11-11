@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+<body>
+    <form onsubmit="return validation()" name="formularz" action="http://www.tomaszx.pl/materialy/test_przesylania.php" method="post">
+        Nick:
+        <label>
+            <input type="text" name="nick">
+        </label>
+        adres e-mail:
+        <label>
+            <input type="email" name="email">
+        </label>
+        numer gg:
+        <label>
+            <input type="number" name="gg">
+        </label>
+        adres www:
+        <label>
+            <input type="url" name="www">
+        </label>
+        treść komentarza:
+        <label>
+            <input type="text" name="komentarz">
+        </label>
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+</html>
+
+<script>
+    const f = document.forms["formularz"];
+
+    function validation() {
+        let nick = f["nick"].value;
+        let email = f["email"].value;
+        let gg = f["gg"].value;
+        let www = f["www"].value;
+        let komentarz = f['komentarz'].value;
+        let isValid = true;
+        let alertMessage = [];
+        let alert1, alert2, alert3, alert4, alert5 = "";
+
+        if (nick === "" && email === "" && gg === "" && www === "" && komentarz === "") {
+            alert("Wszystkie pola muszą być wypełnione");
+            return false;
+        }
+        if (nick === "") {
+            alert1 = "pole nick musi być wypełnione";
+            alertMessage.push(alert1);
+            isValid = false;
+        }
+        if (email === "") {
+            alert2 = "pole email musi być wypełnione";
+            alertMessage.push(alert2);
+            isValid = false;
+        }
+        if (gg === "") {
+            alert3 = "pole gg musi być wypełnione";
+            alertMessage.push(alert3);
+            isValid = false;
+        }
+        if (www === "") {
+            alert4 = "pole www musi być wypełnione";
+            alertMessage.push(alert4);
+            isValid = false;
+        }
+        if (komentarz === "") {
+            alert5 = "pole komenatarz musi być wypełnione";
+            alertMessage.push(alert5);
+            isValid = false;
+        }
+
+        if (isValid === false) {
+            alert(alertMessage.join(' oraz '));
+        }
+
+        return isValid;
+    }
+</script>
