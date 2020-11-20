@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz w html5</title>
+</head>
+<body>
+
+<h2>Wymagane pola są oznaczone na czerwono</h2>
+
+<form name="rejestracja">
+
+    <p>
+        <label for="imie">Imię:</label><br>
+        <label>
+            <input type="text" id="imie" placeholder="Wpisz imię" required>
+        </label>
+    </p>
+    <p>
+        <label for="nazwisko">Nazwisko:</label><br>
+        <label>
+            <input type="text" id="nazwisko" placeholder="Wpisz nazwisko" required>
+        </label>
+    </p>
+    <p>
+        <label for="email">Email:</label><br>
+        <label>
+            <input type="email" id="email" placeholder="Wpisz adres email" required>
+        </label>
+    </p>
+    <p>
+        <label for="numer_telefonu">Numer telefonu:</label><br>
+        <label>
+            <input type="tel" id="numer_telefonu" placeholder="Wpisz numer telefonu" required>
+        </label>
+    </p>
+    <p>
+        <label for="numer_gg">Numer gg:</label><br>
+        <label>
+            <input type="number" id="numer_gg" placeholder="Wpisz numer gg">
+        </label>
+    </p>
+    <p>
+        <label for="data_urodzenia">Data urodzenia:</label><br>
+        <label>
+            <input type="date" id="data_urodzenia">
+        </label>
+    </p>
+    <p>
+        <label for="www">Adres swojej strony internetowej:</label><br>
+        <label>
+            <input type="url" id="www" placeholder="Wpisz adres swojej strony internetowej">
+        </label>
+    </p>
+    <p>
+        <label for="haslo">Hasło:</label><br>
+        <label>
+            <input type="password" id="haslo" placeholder="Wpisz hasło" required>
+        </label>
+    </p>
+    <p>
+        <input type="submit" value="Zarejestruj">
+        <input type="reset" value="Zresetuj">
+    </p>
+</form>
+
+</body>
+
+</html>
+
+<style>
+    input:required:invalid, input:focus:invalid {
+        border: 2px solid red;
+    }
+</style>
+
+
+
+
