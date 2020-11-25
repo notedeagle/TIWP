@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>xml to html</title>
+</head>
+<style>
+    table,th,td {
+        border : 1px solid black;
+        border-collapse: collapse;
+    }
+    th,td {
+        padding: 5px;
+    }
+</style>
+<body>
+
+<h1>Pizzeria</h1>
+
+<button type="button" onclick="loadXml()">Pokaż zamówienia</button>
+<br><br>
+<table id="pizza"></table>
+
+<script>
+    function loadXml() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                myFunction(this);
+            }
+        };
+        xhttp.open("GET", "pizza.xml", true);
+        xhttp.send();
+    }
+    function myFunction(xml) {
+        var i;
+        var xmlDoc = xml.responseXML;
+        var table="<tr><th>Osoba</th><th>Ciasto</th><th>Wielkość</th><th>Składnik 1</th><th>Składnik 2</th>" +
+            "<th>Składnik 3</th><th>Sos</th><th>Cena</th></tr>";
+        var x = xmlDoc.getElementsByTagName("zamowienie");
+        for (i = 0; i < x.length; i++) {
+            table += "<tr><td>" +
+                x[i].getElementsByTagName("osoba")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("ciasto")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("wielkosc")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("skladnik1")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("skladnik2")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("skladnik3")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("sos")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("cena")[0].childNodes[0].nodeValue +
+                "</td></tr>";
+        }
+        document.getElementById("pizza").innerHTML = table;
+    }
+</script>
+
+</body>
+</html>
+
