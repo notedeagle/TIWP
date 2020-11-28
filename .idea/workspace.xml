@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="delete .gitignore">
-      <change afterPath="$PROJECT_DIR$/pizza.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xml.html" afterDir="false" />
+    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="add form, and javascript validation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/xml.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,6 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -74,12 +72,17 @@
       <workItem from="1603967075692" duration="1417000" />
       <workItem from="1604844605770" duration="713000" />
       <workItem from="1604867826357" duration="6454000" />
-      <workItem from="1604909121689" duration="75000" />
-      <workItem from="1604910503943" duration="83000" />
-      <workItem from="1604910625712" duration="255000" />
-      <workItem from="1604910929545" duration="184000" />
-      <workItem from="1604925857078" duration="78000" />
-      <workItem from="1606306801253" duration="2949000" />
+      <workItem from="1604909267293" duration="20000" />
+      <workItem from="1604909363810" duration="35000" />
+      <workItem from="1604919257733" duration="880000" />
+      <workItem from="1604922086577" duration="1636000" />
+      <workItem from="1604924802080" duration="917000" />
+      <workItem from="1604926526224" duration="72000" />
+      <workItem from="1605084729354" duration="6965000" />
+      <workItem from="1605096407721" duration="3779000" />
+      <workItem from="1605450340509" duration="470000" />
+      <workItem from="1605873690867" duration="3304000" />
+      <workItem from="1606391603147" duration="1515000" />
     </task>
     <task id="LOCAL-00001" summary="add onmouseenter event">
       <created>1603549429328</created>
@@ -116,14 +119,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604875659133</updated>
     </task>
-    <task id="LOCAL-00006" summary="delete .gitignore">
-      <created>1604909168945</created>
+    <task id="LOCAL-00006" summary="fix initialPlay">
+      <created>1604925700878</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1604909168945</updated>
+      <updated>1604925700878</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add form, and javascript validation">
+      <created>1605099718683</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605099718683</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,39 +157,40 @@
     <MESSAGE value="php --&gt; html" />
     <MESSAGE value="add .gitignore" />
     <MESSAGE value="delete video, add audio.html, random music at random time for 30 seconds" />
-    <MESSAGE value="delete .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete .gitignore" />
+    <MESSAGE value="fix initialPlay" />
+    <MESSAGE value="add form, and javascript validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add form, and javascript validation" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="743" y="286" key="#Inspections" timestamp="1605875783464">
+      <screen x="0" y="0" width="2234" height="1216" />
+    </state>
+    <state x="743" y="286" key="#Inspections/0.0.2234.1216@0.0.2234.1216" timestamp="1605875783464" />
     <state x="412" y="100" key="#PHP" timestamp="1603537179333">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="412" y="100" key="#PHP/0.0.1440.900@0.0.1440.900" timestamp="1603537179333" />
+    <state x="571" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604919517648">
+      <screen x="0" y="0" width="2234" height="1216" />
+    </state>
+    <state x="571" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2234.1216@0.0.2234.1216" timestamp="1604919517648" />
     <state x="400" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604869431305">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="400" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1604869431305" />
-    <state x="144" y="79" key="MergeDialog" timestamp="1604925875404">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="144" y="79" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1604925875404" />
-    <state x="543" y="380" key="NewPhpFileDialog" timestamp="1603537227358">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="842" y="513" key="NewPhpFileDialog" timestamp="1605876027964">
+      <screen x="0" y="0" width="2234" height="1216" />
     </state>
     <state x="543" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1603537227358" />
-    <state x="229" y="86" key="SettingsEditor" timestamp="1606306850272">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="842" y="513" key="NewPhpFileDialog/0.0.2234.1216@0.0.2234.1216" timestamp="1605876027964" />
+    <state x="150" y="340" key="Vcs.Push.Dialog.v2" timestamp="1605099723394">
+      <screen x="0" y="0" width="2234" height="1216" />
     </state>
-    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606306850272" />
-    <state x="97" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604909176026">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="97" y="252" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604875678890" />
+    <state x="150" y="340" key="Vcs.Push.Dialog.v2/0.0.2234.1216@0.0.2234.1216" timestamp="1605099723394" />
+    <state x="936" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603967083755">
+      <screen x="0" y="0" width="2234" height="1216" />
     </state>
-    <state x="97" y="252" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604909176026" />
-    <state x="150" y="340" key="Vcs.Push.Dialog.v2/0.0.2234.1216@0.0.2234.1216" timestamp="1603550319168" />
-    <state x="603" y="386" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604925863702">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="603" y="386" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1604925863702" />
     <state x="936" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2234.1216@0.0.2234.1216" timestamp="1603967083755" />
   </component>
 </project>

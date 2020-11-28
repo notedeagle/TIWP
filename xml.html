@@ -20,17 +20,19 @@
 <button type="button" onclick="loadXml()">Pokaż zamówienia</button>
 <br><br>
 <table id="pizza"></table>
+<p id="w"></p><br>
+<p id="c"></p>
 
 <script>
     function loadXml() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
+        var requester = new XMLHttpRequest();
+        requester.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 myFunction(this);
             }
         };
-        xhttp.open("GET", "pizza.xml", true);
-        xhttp.send();
+        requester.open("GET", "pizza.xml", true);
+        requester.send();
     }
     function myFunction(xml) {
         var i;
@@ -58,9 +60,16 @@
                 "</td></tr>";
         }
         document.getElementById("pizza").innerHTML = table;
+
+        var y;
+        var sum = 0;
+        for (i = 0; i <x.length; i++) {
+            y = x[i].getElementsByTagName("cena")[0].childNodes[0].nodeValue;
+            sum += parseInt(y);
+        }
+        document.getElementById("w").innerHTML = sum;
     }
 </script>
-
 </body>
 </html>
 
