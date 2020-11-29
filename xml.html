@@ -36,7 +36,6 @@
     }
 
     function myFunction(xml) {
-        // var i;
         var xmlDoc = xml.responseXML;
         var table="<tr><th>Osoba</th><th>Ciasto</th><th>Wielkość</th><th>Składnik 1</th><th>Składnik 2</th>" +
             "<th>Składnik 3</th><th>Sos</th><th>Cena</th></tr>";
@@ -70,22 +69,22 @@
         }
         document.getElementById("cost").innerHTML = "Wartosc zamowienia: " + sum;
 
-        var skladniki = [];
+        var ingredients = [];
         for (i = 0; i < x.length; i++) {
-            skladniki.push(x[i].getElementsByTagName("skladnik1")[0].childNodes[0].nodeValue);
-            skladniki.push(x[i].getElementsByTagName("skladnik2")[0].childNodes[0].nodeValue);
-            skladniki.push(x[i].getElementsByTagName("skladnik3")[0].childNodes[0].nodeValue);
+            ingredients.push(x[i].getElementsByTagName("skladnik1")[0].childNodes[0].nodeValue);
+            ingredients.push(x[i].getElementsByTagName("skladnik2")[0].childNodes[0].nodeValue);
+            ingredients.push(x[i].getElementsByTagName("skladnik3")[0].childNodes[0].nodeValue);
         }
 
-        skladniki.sort();
+        ingredients.sort();
         var current = null;
         var cnt = 0;
-        for (var i = 0; i < skladniki.length; i++) {
-            if (skladniki[i] !== current) {
+        for (var i = 0; i < ingredients.length; i++) {
+            if (ingredients[i] !== current) {
                 if (cnt > 0) {
                     document.getElementById("summary").innerHTML += current + ' - ' + cnt + '<br>';
                 }
-                current = skladniki[i];
+                current = ingredients[i];
                 cnt = 1;
             } else {
                 cnt++;

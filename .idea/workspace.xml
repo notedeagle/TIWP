@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="add read from xml file function">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/xml.html" afterDir="false" />
-    </list>
+    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="add display order summary function" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +80,7 @@
       <workItem from="1606565765652" duration="323000" />
       <workItem from="1606645697939" duration="3264000" />
       <workItem from="1606650228334" duration="177000" />
-      <workItem from="1606650633610" duration="178000" />
+      <workItem from="1606650633610" duration="254000" />
     </task>
     <task id="LOCAL-00001" summary="add onmouseenter event">
       <created>1603549429328</created>
@@ -134,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606312442363</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add display order summary function">
+      <created>1606650848293</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606650848293</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +164,8 @@
     <MESSAGE value="delete video, add audio.html, random music at random time for 30 seconds" />
     <MESSAGE value="delete .gitignore" />
     <MESSAGE value="add read from xml file function" />
-    <option name="LAST_COMMIT_MESSAGE" value="add read from xml file function" />
+    <MESSAGE value="add display order summary function" />
+    <option name="LAST_COMMIT_MESSAGE" value="add display order summary function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="412" y="100" key="#PHP" timestamp="1603537179333">
@@ -175,10 +180,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="144" y="79" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1604925875404" />
-    <state x="360" y="215" key="MultipleFileMergeDialog" timestamp="1606312464100">
+    <state x="360" y="215" key="MultipleFileMergeDialog" timestamp="1606650871371">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="360" y="215" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1606312464100" />
+    <state x="360" y="215" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1606650871371" />
     <state x="543" y="380" key="NewPhpFileDialog" timestamp="1603537227358">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -187,10 +192,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606306850272" />
-    <state x="97" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606312508561">
+    <state x="97" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606650880358">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="97" y="252" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1606312508561" />
+    <state x="97" y="252" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1606650880358" />
     <state x="150" y="340" key="Vcs.Push.Dialog.v2/0.0.2234.1216@0.0.2234.1216" timestamp="1603550319168" />
     <state x="603" y="386" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606312475254">
       <screen x="0" y="0" width="1440" height="900" />
