@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple to do list</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        .delete {
+            float: right;
+            cursor: pointer;
+        }
+        .completed { text-decoration: line-through; }
+    </style>
+</head>
+<body>
+<ul id="list-items"></ul>
+<form class="add-items">
+    <label for="todo-list-item"></label><input type="text" class="form-control" id="todo-list-item" placeholder="Wpisz coś do dodania">
+    <button class="add" type="submit">Dodaj do listy</button>
+</form>
+<script>
+    $(document).ready(function () {
+
+        $('#list-items').html(localStorage.getItem('listItems'));
+
+        $('.add-items').submit(function(event)
+        {
+            event.preventDefault();
+
+            var item = $('#todo-list-item').val();
+
+            if(item)
+            {
+                $('#list-items').append("<li><input class='checkbox' type='checkbox'/>" + item + "<a class='delete'>x</a><hr></li>");
+
+                localStorage.setItem('listItems', $('#list-items').html());
+
+                $('#todo-list-item').val("");
+            }
+
+        });
+
+        $(document).on('change', '.checkbox', function()
+        {
+            if($(this).attr('checked'))
+            {
+                $(this).removeAttr('checked');
+            }
+            else
+            {
+                $(this).attr('checked', 'checked');
+            }
+
+            $(this).parent().toggleClass('completed');
+
+            localStorage.setItem('listItems', $('#list-items').html());
+        });
+
+        $(document).on('click', '.delete', function()
+        {
+            $(this).parent().remove();
+
+            localStorage.setItem('listItems', $('#list-items').html());
+        });
+
+    });
+</script>
+</body>
+</html>
