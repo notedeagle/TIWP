@@ -13,6 +13,7 @@ $(document).ready(function(){
     var score;
     var paused = false;
     var timer;
+    var obstacle;
 
     //Lets create the snake now
     var snake_array; //an array of cells to make up the snake
@@ -22,6 +23,7 @@ $(document).ready(function(){
         create_snake();
         create_food(); //Now we can see the food particle
         create_extra_food();
+        create_obstacle(10); //You can change number of obstacles
         //finally lets display the score
         score = 0;
         //Lets move the snake now using a timer which will trigger the paint function
@@ -56,11 +58,24 @@ $(document).ready(function(){
         //Because there are 45(450/10) positions accross the rows and columns
     }
 
+    //Function to create food with 2x bonus
     function create_extra_food() {
         extraFood = {
             x: Math.round(Math.random()*(w-cw)/cw),
             y: Math.round(Math.random()*(h-cw)/cw),
         };
+    }
+
+    //Function to create obstacles
+    function create_obstacle(number_of_obstacles) {
+        obstacleArray = [];
+        for(var i = 0; i < number_of_obstacles; i++) {
+            obstacle = {
+                x: Math.round(Math.random()*(w-cw)/cw),
+                y: Math.round(Math.random()*(h-cw)/cw),
+            };
+            obstacleArray.push({x: obstacle.x, y: obstacle.y});
+        }
     }
 
     //Lets paint the snake now
@@ -91,7 +106,7 @@ $(document).ready(function(){
             //This will restart the game if the snake hits the wall
             //Lets add the code for body collision
             //Now if the head of the snake bumps into its body, the game will restart
-            if(nx === -1 || nx === w/cw || ny === -1 || ny === h/cw || check_collision(nx, ny, snake_array)) {
+            if(nx === -1 || nx === w/cw || ny === -1 || ny === h/cw || check_collision(nx, ny, snake_array) || check_collision(nx, ny, obstacleArray)) {
                 //restart game
                 init();
                 //Lets organize the code a bit now.
@@ -123,7 +138,6 @@ $(document).ready(function(){
                 tail.x = nx; tail.y = ny;
             }
             //The snake can now eat the food.
-
             snake_array.unshift(tail); //puts back the tail as the first cell
 
             for(var i = 0; i < snake_array.length; i++) {
@@ -136,6 +150,10 @@ $(document).ready(function(){
             paint_cell(food.x, food.y, "blue");
             //Paint extra food
             paint_cell(extraFood.x, extraFood.y, "green");
+            //Paint obstacles
+            for(var i = 0; i < obstacleArray.length; i++) {
+                paint_cell(obstacleArray[i].x, obstacleArray[i].y, "red");
+            }
             //Lets paint the score
             var score_text = "Score: " + score;
             ctx.fillStyle = "red";
@@ -175,6 +193,7 @@ $(document).ready(function(){
             paused = false;
         }
     }
+
     //Lets add the keyboard controls now
     $(document).keydown(function(e) {
         var key = e.which;
@@ -186,5 +205,4 @@ $(document).ready(function(){
         else if(key == "80") togglePause();  //p paused or unpaused game
         //The snake is now keyboard controllable
     })
-
 });

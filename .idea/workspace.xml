@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="add setTimer function to change game speed (speed up after snake eat food)">
+    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="cleaning">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snake.js" beforeDir="false" afterPath="$PROJECT_DIR$/snake.js" afterDir="false" />
     </list>
@@ -91,7 +91,11 @@
       <workItem from="1607538975222" duration="61000" />
       <workItem from="1607539247346" duration="195000" />
       <workItem from="1607625130510" duration="16791000" />
-      <workItem from="1607688187283" duration="989000" />
+      <workItem from="1607688187283" duration="1188000" />
+      <workItem from="1607694700408" duration="936000" />
+      <workItem from="1607700420238" duration="1070000" />
+      <workItem from="1607702917996" duration="164000" />
+      <workItem from="1607710130755" duration="3908000" />
     </task>
     <task id="LOCAL-00001" summary="add onmouseenter event">
       <created>1603549429328</created>
@@ -170,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607686397516</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="cleaning">
+      <created>1607689375920</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607689375920</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +211,7 @@
     <MESSAGE value="add simple to do list using jquery" />
     <MESSAGE value="add simple snake game" />
     <MESSAGE value="add setTimer function to change game speed (speed up after snake eat food)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add setTimer function to change game speed (speed up after snake eat food)" />
+    <MESSAGE value="cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaning" />
   </component>
 </project>
