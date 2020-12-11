@@ -10,7 +10,6 @@ $(document).ready(function(){
     var d;
     var food;
     var extraFood; //extra food, boost +2
-    var obstacle;
     var score;
     var paused = false;
     var timer;
@@ -23,7 +22,6 @@ $(document).ready(function(){
         create_snake();
         create_food(); //Now we can see the food particle
         create_extra_food();
-        create_obstacle(); //Create obstacle
         //finally lets display the score
         score = 0;
         //Lets move the snake now using a timer which will trigger the paint function
@@ -60,13 +58,6 @@ $(document).ready(function(){
 
     function create_extra_food() {
         extraFood = {
-            x: Math.round(Math.random()*(w-cw)/cw),
-            y: Math.round(Math.random()*(h-cw)/cw),
-        };
-    }
-
-    function create_obstacle() {
-        obstacle = {
             x: Math.round(Math.random()*(w-cw)/cw),
             y: Math.round(Math.random()*(h-cw)/cw),
         };
@@ -145,14 +136,15 @@ $(document).ready(function(){
             paint_cell(food.x, food.y, "blue");
             //Paint extra food
             paint_cell(extraFood.x, extraFood.y, "green");
-            //Paint obstacles
-            paint_obstacle(obstacle.x, obstacle.y);
             //Lets paint the score
             var score_text = "Score: " + score;
+            ctx.fillStyle = "red";
             ctx.fillText(score_text, 5, h-5);
             //Paint timer
             var timer_text = "Timer: " + timer;
             ctx.fillText(timer_text, 50, h-5);
+            var paused_text = "Press p to pause the game";
+            ctx.fillText(paused_text, 320, h-5);
         }
     }
 
@@ -162,13 +154,6 @@ $(document).ready(function(){
         ctx.fillRect(x*cw, y*cw, cw, cw);
         ctx.strokeStyle = "white";
         ctx.strokeRect(x*cw, y*cw, cw, cw);
-    }
-
-    function paint_obstacle(x, y) {
-        ctx.fillStyle = "red";
-        ctx.fillRect(x*cw, y*cw, 20, 50);
-        ctx.strokeStyle = "white";
-        ctx.strokeRect(x*cw, y*cw, 20, 50);
     }
 
     function check_collision(x, y, array) {
@@ -182,7 +167,7 @@ $(document).ready(function(){
         return false;
     }
 
-    //Function to paused or unpaues game
+    //Function to paused or unpaused game
     function togglePause() {
         if(paused === false) {
             paused = true;
