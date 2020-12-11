@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="add simple to do list using jquery">
-      <change afterPath="$PROJECT_DIR$/snake.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snake.js" afterDir="false" />
+    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="add simple snake game">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake.js" beforeDir="false" afterPath="$PROJECT_DIR$/snake.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,7 @@
       <workItem from="1607334287354" duration="7000" />
       <workItem from="1607538975222" duration="61000" />
       <workItem from="1607539247346" duration="195000" />
-      <workItem from="1607625130510" duration="11736000" />
+      <workItem from="1607625130510" duration="14626000" />
     </task>
     <task id="LOCAL-00001" summary="add onmouseenter event">
       <created>1603549429328</created>
@@ -156,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607334137889</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add simple snake game">
+      <created>1607683107568</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607683107568</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +190,7 @@
     <MESSAGE value="add form, and javascript validation" />
     <MESSAGE value="prepare for new functions" />
     <MESSAGE value="add simple to do list using jquery" />
-    <option name="LAST_COMMIT_MESSAGE" value="add simple to do list using jquery" />
+    <MESSAGE value="add simple snake game" />
+    <option name="LAST_COMMIT_MESSAGE" value="add simple snake game" />
   </component>
 </project>

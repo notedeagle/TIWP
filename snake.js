@@ -13,6 +13,7 @@ $(document).ready(function(){
     var obstacle;
     var score;
     var paused = false;
+    var timer;
 
     //Lets create the snake now
     var snake_array; //an array of cells to make up the snake
@@ -25,13 +26,18 @@ $(document).ready(function(){
         create_obstacle(); //Create obstacle
         //finally lets display the score
         score = 0;
-
         //Lets move the snake now using a timer which will trigger the paint function
-        //every 60ms
-        if(typeof game_loop != "undefined") clearInterval(game_loop);
-        game_loop = setInterval(paint, 60);
+        //every 80ms + setTimer function
+        timer = 80;
+        setTimer(timer);
     }
     init();
+
+    //Function to change speed
+    function setTimer(timer) {
+        if(typeof game_loop != "undefined") clearInterval(game_loop);
+        game_loop = setInterval(paint, timer);
+    }
 
     function create_snake() {
         var length = 5; //Length of the snake
@@ -108,11 +114,17 @@ $(document).ready(function(){
             if(nx === food.x && ny === food.y) {
                 var tail = {x: nx, y: ny};
                 score++;
+                //Speed up little bit
+                timer -= 2;
+                setTimer(timer);
                 //Create new food
                 create_food();
             } else if(nx === extraFood.x && ny === extraFood.y) {
                 var tail = {x: nx, y: ny};
                 score += 2;
+                //I am speeeeed
+                timer -= 4;
+                setTimer(timer);
                 //Create new extra food
                 create_extra_food();
             } else {
@@ -138,6 +150,9 @@ $(document).ready(function(){
             //Lets paint the score
             var score_text = "Score: " + score;
             ctx.fillText(score_text, 5, h-5);
+            //Paint timer
+            var timer_text = "Timer: " + timer;
+            ctx.fillText(timer_text, 50, h-5);
         }
     }
 
