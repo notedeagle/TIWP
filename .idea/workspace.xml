@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="prepare for new functions">
-      <change afterPath="$PROJECT_DIR$/jquery-3.5.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist.html" afterDir="false" />
+    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="add simple to do list using jquery">
+      <change afterPath="$PROJECT_DIR$/snake.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -57,6 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -85,7 +87,11 @@
       <workItem from="1605873690867" duration="3304000" />
       <workItem from="1606391603147" duration="1515000" />
       <workItem from="1606564473500" duration="31000" />
-      <workItem from="1607330140428" duration="2690000" />
+      <workItem from="1607330140428" duration="2771000" />
+      <workItem from="1607334287354" duration="7000" />
+      <workItem from="1607538975222" duration="61000" />
+      <workItem from="1607539247346" duration="195000" />
+      <workItem from="1607625130510" duration="11736000" />
     </task>
     <task id="LOCAL-00001" summary="add onmouseenter event">
       <created>1603549429328</created>
@@ -143,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606564493997</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add simple to do list using jquery">
+      <created>1607334137889</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607334137889</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,38 +183,7 @@
     <MESSAGE value="fix initialPlay" />
     <MESSAGE value="add form, and javascript validation" />
     <MESSAGE value="prepare for new functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="prepare for new functions" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="743" y="286" key="#Inspections" timestamp="1605875783464">
-      <screen x="0" y="0" width="2234" height="1216" />
-    </state>
-    <state x="743" y="286" key="#Inspections/0.0.2234.1216@0.0.2234.1216" timestamp="1605875783464" />
-    <state x="412" y="100" key="#PHP" timestamp="1603537179333">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="412" y="100" key="#PHP/0.0.1440.900@0.0.1440.900" timestamp="1603537179333" />
-    <state x="571" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604919517648">
-      <screen x="0" y="0" width="2234" height="1216" />
-    </state>
-    <state x="571" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2234.1216@0.0.2234.1216" timestamp="1604919517648" />
-    <state x="400" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604869431305">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="400" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1604869431305" />
-    <state x="842" y="513" key="NewPhpFileDialog" timestamp="1605876027964">
-      <screen x="0" y="0" width="2234" height="1216" />
-    </state>
-    <state x="543" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1603537227358" />
-    <state x="842" y="513" key="NewPhpFileDialog/0.0.2234.1216@0.0.2234.1216" timestamp="1605876027964" />
-    <state x="150" y="340" key="Vcs.Push.Dialog.v2" timestamp="1606564496881">
-      <screen x="0" y="0" width="2234" height="1216" />
-    </state>
-    <state x="97" y="252" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604875678890" />
-    <state x="150" y="340" key="Vcs.Push.Dialog.v2/0.0.2234.1216@0.0.2234.1216" timestamp="1606564496881" />
-    <state x="936" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603967083755">
-      <screen x="0" y="0" width="2234" height="1216" />
-    </state>
-    <state x="936" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2234.1216@0.0.2234.1216" timestamp="1603967083755" />
+    <MESSAGE value="add simple to do list using jquery" />
+    <option name="LAST_COMMIT_MESSAGE" value="add simple to do list using jquery" />
   </component>
 </project>
