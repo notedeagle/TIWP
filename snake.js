@@ -24,6 +24,7 @@ $(document).ready(function(){
         create_food(); //Now we can see the food particle
         create_extra_food();
         create_obstacle(10); //You can change number of obstacles
+        document.getElementById("highScore").innerHTML = localStorage.getItem("record");
         //finally lets display the score
         score = 0;
         //Lets move the snake now using a timer which will trigger the paint function
@@ -108,6 +109,7 @@ $(document).ready(function(){
             //Now if the head of the snake bumps into its body, the game will restart
             if(nx === -1 || nx === w/cw || ny === -1 || ny === h/cw || check_collision(nx, ny, snake_array) || check_collision(nx, ny, obstacleArray)) {
                 //restart game
+                saveHighScore();
                 init();
                 //Lets organize the code a bit now.
                 return;
@@ -191,6 +193,24 @@ $(document).ready(function(){
             paused = true;
         } else if(paused === true) {
             paused = false;
+        }
+    }
+
+    //Function save highscore and user nickname to local storage
+    function saveHighScore() {
+        var txt;
+        var nickName;
+        var record = +localStorage.getItem("highScore");
+
+        if(typeof (Storage) !== "undefined" && score > record) {
+            nickName = prompt("You beat highscore! Your score is " + score + " point(s)! Please enter your name");
+            if(nickName == null || nickName == "") {
+                txt = "User cancelled the prompt";
+            } else {
+                txt = nickName + " " + score + " pts";
+            }
+            localStorage.setItem("record", txt);
+            localStorage.setItem("highScore", score);
         }
     }
 
