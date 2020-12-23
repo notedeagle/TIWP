@@ -1,16 +1,15 @@
 var score = 0;
 var level = 1;
-var lives = 5;
 var playing = false;
 var timer = true;
 
 var start = document.getElementById("start");
-var scoreDisplay = document.getElementById("score-display");
+var displayLevel = document.getElementById("score-display");
 var cells = document.querySelectorAll(".cell");
 
 function displayScore() {
-    scoreDisplay.innerHTML = "Score: " + score + "<span id='level-display'> Level: " + level +
-        "</span><span id='lifes-display'> Lives: " + lives + "</span>";
+    displayLevel.innerHTML = "Score: " + score + "<span id='level-display'> Level: " + level +
+        "</span>";
 }
 
 function randomCell() {
@@ -18,11 +17,10 @@ function randomCell() {
 }
 
 function gameOver() {
-    if (lives === 0 || timer === false) {
+    if (timer === false) {
         clearInterval(getCells);
         score = 0;
         level = 1;
-        lives = 5;
         playing = false;
     }
 }
@@ -34,7 +32,6 @@ function highlightCell() {
     setTimeout(function() {
         cells[target].style.background = "red";
         if (score === prevScore) {
-            lives--;
             displayScore();
             gameOver();
         }
@@ -71,7 +68,6 @@ start.addEventListener("click", function() {
 for (var i = 0; i < cells.length; i++) {
     cells[i].addEventListener("click", function() {
         if (playing) {
-            var cell = this;
             if (this.style.background === "green") {
                 score++;
                 if (score >= 10) {
@@ -93,7 +89,6 @@ for (var i = 0; i < cells.length; i++) {
                 }
             }
             else {
-                lives--;
                 gameOver();
             }
             displayScore();
