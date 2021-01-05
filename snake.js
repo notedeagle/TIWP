@@ -81,7 +81,7 @@ $(document).ready(function(){
 
     //Lets paint the snake now
     function paint() {
-        //If to paused game
+        //pause or unpause game
         if(paused === false) {
             //To avoid the snake trail we need to paint the BG on every frame
             //Lets paint the canvas now
@@ -187,7 +187,7 @@ $(document).ready(function(){
         return false;
     }
 
-    //Function to paused or unpaused game
+    //Function to pause or unpause game
     function togglePause() {
         if(paused === false) {
             paused = true;
@@ -222,7 +222,7 @@ $(document).ready(function(){
         else if(key == "38" && d != "down") d = "up";
         else if(key == "39" && d != "left") d = "right";
         else if(key == "40" && d != "up") d = "down";
-        else if(key == "80") togglePause();  //p paused or unpaused game
+        else if(key == "80") togglePause();  //p to toggle pause
         //The snake is now keyboard controllable
     })
 });
