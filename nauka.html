@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nauka</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="englishApp.js"></script>
+
+    <style>
+        #effect {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #effect td, #effect th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #effect tr:nth-child(even){background-color: #f2f2f2;}
+
+        #effect tr:hover {background-color: #ddd;}
+
+        #effect th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<button id="button" class="button">Pokaż słówka</button>
+
+<div class="toggler">
+    <div id="effect" class="ui-widget-content ui-corner-all" style="border: none">
+        <table id="tabela" style="border-collapse: collapse; width: 300px" >
+            <tr style="border: 1px solid black">
+                <th id="jezyk1"></th>
+                <th id="jezyk2"></th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<a href="englishApp.html" class="button">Cofnij</a>
+
+<script>
+    $(function() {
+        var typ = localStorage.getItem('tryb');
+        var i;
+
+        $('a').button();
+        los();
+
+        if(typ === 'ang-pol') {
+            $("#jezyk1").html('angielski');
+            $("#jezyk2").html('polski');
+
+            for(i = 0; i < ileSlow; i++) {
+                $("#tabela").append('<tr><td style="border: 1px solid black">' +
+                    angielski[i] +
+                    '</td><td style="border: 1px solid black">' +
+                    polski[i] +
+                    '</td></tr>');
+            }
+        }
+        else if(typ === 'pol-ang') {
+            $("#jezyk1").html('polski');
+            $("#jezyk2").html('angielski');
+
+            for(i = 0; i < ileSlow; i++) {
+                $("#tabela").append('<tr><td style="border: 1px solid black">' +
+                    polski[i] +
+                    '</td><td style="border: 1px solid black">' +
+                    angielski[i] +
+                    '</td></tr>');
+            }
+        }
+    });
+
+    $( "#effect" ).hide();
+    $( function() {
+        function runEffect() {
+            $("#effect").toggle('slide', 1000);
+        }
+        
+        $("#button").on("click", function() {
+            runEffect();
+        });
+    } );
+</script>
+</body>
+</html>

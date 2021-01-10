@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="some changes">
+    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="change some comments">
+      <change afterPath="$PROJECT_DIR$/englishApp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/englishApp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nauka.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wynik.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -103,6 +108,9 @@
       <workItem from="1608727176683" duration="1141000" />
       <workItem from="1609780317793" duration="1078000" />
       <workItem from="1609781477861" duration="4318000" />
+      <workItem from="1609841349541" duration="973000" />
+      <workItem from="1609947959626" duration="4722000" />
+      <workItem from="1610266349820" duration="17412000" />
     </task>
     <task id="LOCAL-00001" summary="add onmouseenter event">
       <created>1603549429328</created>
@@ -216,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608728317866</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="change some comments">
+      <created>1609841554043</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1609841554043</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +266,7 @@
     <MESSAGE value="add function to save highscore and nickname in localstorage" />
     <MESSAGE value="add simple whack-a-mole game" />
     <MESSAGE value="some changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
+    <MESSAGE value="change some comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="change some comments" />
   </component>
 </project>

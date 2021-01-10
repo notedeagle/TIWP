@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>English App</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<style>
+    #panel, #opcje {
+        margin: auto;
+        width: 20%;
+        padding: 10px;
+        text-align: center;
+        background-color: #4CAF50;
+        border: solid 1px white;
+    }
+
+    #panel {
+        background-color: #4CAF50;
+        padding: 10px;
+        width: 20%;
+        height: 100px;
+        display: none;
+        margin: auto;
+    }
+
+    #panel a {
+        color: black;
+        padding: 15px 80px;
+        border: 1px solid white;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    #infoBtn {
+        padding: .5em 1em; text-decoration: none;
+    }
+</style>
+<body>
+    <div id="opcje">Wybierz co chcesz zrobić:</div>
+    <div id="panel">
+        <a href="test.html" onclick="check()">Test</a>
+        <a href="nauka.html" onclick="check()">Nauka</a>
+        <fieldset id="wybor">
+            <legend>Przetłumacz z języka: </legend>
+            <label for="ang-pol">angielskiego na polski</label>
+            <input type="radio" name="sposob" id="ang-pol" checked="checked">
+            <label for="pol-ang">polskiego na angielski</label>
+            <input type="radio" name="sposob" id="pol-ang">
+        </fieldset></div>
+
+
+    <button id="infoBtn" class="ui-state-default ui-corner-all" style="left: 40%; position: absolute; background: #4CAF50;">O programie</button>
+
+    <div id="dialog" class="ui-widget-content ui-corner-all" style="border: none">
+        <h3 class="ui-widget-header ui-corner-all">Nauka angielskiego</h3>
+        <p>Wersja: 1.0.1</p>
+        <p>Autor: Dawid Kluczewski</p>
+    </div>
+
+</body>
+<script>
+    $(document).ready(function(){
+        $("#opcje").click(function(){
+            $("#panel").slideToggle("slow");
+        });
+    });
+
+    function check() {
+        var tryb;
+        var ang_pol = $('#ang-pol');
+        var pol_ang = $('#pol-ang');
+
+        if(ang_pol.is(':checked')) {
+            tryb = ang_pol.prop('id');
+        }
+        else if(pol_ang.is(':checked')) {
+            tryb = pol_ang.prop('id');
+        }
+
+        localStorage.setItem('tryb', tryb);
+    }
+
+    $('#dialog').dialog({
+        autoOpen: false,
+        show: {
+            effect: "drop",
+            duration: 1000
+        },
+        hide: {
+            effect: "drop",
+            duration: 1000
+        }
+    });
+
+    $('#infoBtn').on('click', function() {
+        $('#dialog').dialog('open');
+    });
+</script>
+</html>

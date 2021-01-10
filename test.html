@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test angielskiego</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body style="padding-left: 30%; padding-right: 30%">
+<div id="dialog-confirm"></div>
+<div id="accordion"></div>
+<br><br>
+<button id="sprawdz" class="ui-button ui-widget ui-corner-all">Sprawdź wyniki</button>
+<button id="zakoncz" class="ui-button ui-widget ui-corner-all">Zakończ</button>
+<script src="englishApp.js"></script>
+<script>
+    function zapytaj() {
+        var okno = $('#dialog-confirm');
+
+        okno.html('<p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>' +
+            'Czy na pewno chcesz przerwać test?</p>')
+        okno.dialog( {
+            resizable: false,
+            height: 'auto',
+            width: 400,
+            modal: true,
+            buttons: {
+                'Tak': function() {
+                    window.location.href = 'englishApp.html';
+                },
+                'Nie': function() {
+                    $(this).dialog('close');
+                }
+            }
+        });
+    }
+
+    $(function() {
+        var sposob = localStorage.getItem('tryb');
+        var sprawdz = $('#sprawdz');
+        var zakoncz = $('#zakoncz');
+        var test = $('#accordion');
+        var i;
+
+        los();
+
+        if(sposob === 'ang-pol') {
+            for(i = 0; i < ileSlow; i++) {
+                test.append('<h3>' +
+                    angielski[i] +
+                    '</h3><div><label><input type="text" id="input' +
+                    i.toString() +
+                    '"></label></div>');
+            }
+        }
+        else if(sposob === 'pol-ang') {
+            for(i = 0; i < ileSlow; i++) {
+                test.append('<h3>' +
+                    polski[i] +
+                    '</h3><div><label><input type="text" id="input' +
+                    i.toString() +
+                    '"></label></div>');
+            }
+        }
+        test.accordion();
+
+        zakoncz.button();
+        sprawdz.button();
+
+        zakoncz.click(function(event) {
+            zapytaj();
+            event.preventDefault();
+        });
+
+        sprawdz.click(function(event) {
+            event.preventDefault();
+            var wynik = 0;
+            var i = 0;
+
+            if(sposob === 'ang-pol') {
+                for (i = 0; i < ileSlow; i++) {
+                    if ($('#input' + i.toString()).val() === polski[i]) {
+                        wynik++;
+                    }
+                }
+            } else if(sposob === 'pol-ang') {
+                for (i = 0; i < ileSlow; i++) {
+                    if ($('#input' + i.toString()).val() === angielski[i]) {
+                        wynik++;
+                    }
+                }
+            }
+
+            localStorage.setItem('wynik', wynik.toString());
+            window.location.href = 'wynik.html';
+        });
+    });
+</script>
+</body>
+</html>
