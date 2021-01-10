@@ -19,13 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="change some comments">
-      <change afterPath="$PROJECT_DIR$/englishApp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/englishApp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nauka.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wynik.html" afterDir="false" />
+    <list default="true" id="fd1a0cd9-d245-411a-8bd0-29b25b01c535" name="Default Changelist" comment="added simple app to learn english">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nauka.html" beforeDir="false" afterPath="$PROJECT_DIR$/nauka.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wynik.html" beforeDir="false" afterPath="$PROJECT_DIR$/wynik.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +107,8 @@
       <workItem from="1609781477861" duration="4318000" />
       <workItem from="1609841349541" duration="973000" />
       <workItem from="1609947959626" duration="4722000" />
-      <workItem from="1610266349820" duration="17412000" />
+      <workItem from="1610266349820" duration="17688000" />
+      <workItem from="1610289407275" duration="473000" />
     </task>
     <task id="LOCAL-00001" summary="add onmouseenter event">
       <created>1603549429328</created>
@@ -231,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609841554043</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added simple app to learn english">
+      <created>1610289192951</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1610289192951</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +272,7 @@
     <MESSAGE value="add simple whack-a-mole game" />
     <MESSAGE value="some changes" />
     <MESSAGE value="change some comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="change some comments" />
+    <MESSAGE value="added simple app to learn english" />
+    <option name="LAST_COMMIT_MESSAGE" value="added simple app to learn english" />
   </component>
 </project>
